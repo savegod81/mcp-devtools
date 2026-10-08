@@ -1,5 +1,7 @@
 ## How-To on Windows using Claud apps
 1. install: npm install -g @oscarmarin/mcp-devtools
+ then, you need to edit @oscarmarin\\mcp-devtools\\dist\\index.js
+ => find "var isDirectInvocation" and remove "dist/", for windows uses backward slash(\)
 2. in claude_desktop_config.json add mcp server's setting
 "mcpServers":
     {
