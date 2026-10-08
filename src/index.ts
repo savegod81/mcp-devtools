@@ -44,8 +44,8 @@ async function main(): Promise<void> {
 const isDirectInvocation =
   import.meta.url === `file://${process.argv[1]}` ||
   process.argv[1]?.endsWith("mcp-devtools") === true ||
-  process.argv[1]?.endsWith("dist/index.js") === true ||
-  process.argv[1]?.endsWith("dist/index.cjs") === true;
+  process.argv[1]?.endsWith("index.js") === true ||
+  process.argv[1]?.endsWith("index.cjs") === true;
 
 if (isDirectInvocation) {
   main().catch((error: unknown) => {
